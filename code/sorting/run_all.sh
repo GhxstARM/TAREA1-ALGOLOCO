@@ -1,6 +1,6 @@
 #!/bin/bash
-# Compilar todo antes de empezar
-make all
+
+make all || exit 1
 
 ALGORITMOS=("quicksort" "mergesort" "patiencesort" "sort")
 TAMANOS=("10" "1000" "100000" "10000000")

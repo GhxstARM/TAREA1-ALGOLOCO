@@ -112,13 +112,13 @@ int main(int argc, char* argv[]) {
     // Hilo asíncrono para controlar el tiempo límite de ejecución
     auto future_task = async(launch::async, [&]() {
         if (algoritmo == "quicksort") {
-            quickSort(arr, 0, n - 1);
+            quickSort(arr);
         }
         else if (algoritmo == "mergesort") {
-            mergeSort(arr, 0, n - 1);
+            mergeSort(arr);
         }
         else if (algoritmo == "sort") {
-            arr = sortArray(arr);
+            standardSort(arr);
         }
         else if (algoritmo == "patiencesort") {
             arr = patienceSort(arr); 
