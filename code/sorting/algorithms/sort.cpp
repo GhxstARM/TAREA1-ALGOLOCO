@@ -1,7 +1,6 @@
 #include <algorithm>
-#include <vector>
+#include "sorting_algorithms.hpp"
 
-std::vector<int> sortArray(std::vector<int>& arr) {
-    std::sort(arr.begin(), arr.end());  // std::sort de la STL
-    return arr;
+void standardSort(std::vector<int>& values) {
+    std::sort(values.begin(), values.end());
 }
